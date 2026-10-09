@@ -10,7 +10,7 @@ source:
   sha256: 3d3042aa0dd30930d27801c9833ebfbe16eba0ab0e5d6277636ce17b157f2a0f
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not linux]
   script:
     - |
@@ -32,7 +32,7 @@ requirements:
     - expat
     - libboost-devel
     - libpq
-    - libpqxx
+    - libpqxx <8  # osm2pgrouting 3.0.0 targets C++17; libpqxx 8 requires C++20
 
   run:
 
