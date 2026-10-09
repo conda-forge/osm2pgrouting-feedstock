@@ -32,7 +32,7 @@ requirements:
     - expat
     - libboost-devel
     - libpq
-    - libpqxx
+    - libpqxx <8  # osm2pgrouting 3.0.0 targets C++17; libpqxx 8 requires C++20
 
   run:
 
